@@ -14,10 +14,37 @@
         name="f_name"
         placeholder="pl.Andris"
       />
+      <br />
+      <label for="male">Férfi:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="female">Nő:</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="other">Egyéb:</label>
+      <input type="radio" id="other" name="gender" value="other" /><br />
+      <label for="coding">Kódolás: </label>
+      <input type="checkbox" name="coding" id="coding" value="coding" /><br />
+      <label for="chess">Sakk: </label>
+      <input type="checkbox" name="chess" id="chess" value="chess" /><br />
+      <label for="drive">Vezetés: </label>
+      <input type="checkbox" name="drive" id="drive" value="drive" /><br />
+      <label for="description">leirás: </label><br />
+      <textarea name="description" id="description" cols="auto" rows="auto">
+        leirás</textarea
+      ><br />
+      <label for="hair_color">Hajszín</label><br />
+      <select name="hair_color" id="hair_color">
+        <option value="brown">barna</option>
+        <option value="blonde">szőke</option>
+        <option value="red">vörös</option></select
+      ><br />
+      
+      <br /><input type="submit" />
+      <button type="button" onclick="alert('móka')">Kattints ide</button>
     </form>
   </body>
 </html>
 
 <!-- {
     f_name: "Andris"
+    gender: 
 } -->
