@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container_big {
+        background-color: grey;
+        color: white;
+        padding: 20px;
+        width: 30%;
+      }
+      .container_small {
+        background-color: green;
+      }
+      .green_button {
+        background-color: green;
+        text-align: center;
+        padding: 7px;
+        border: none;
+      }
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: darkgreen;
+      }
+
+      #costumers {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+      }
+      #costumers td {
+        border: 1px solid black;
+      }
+      #costumers tr:nth-child(even) {
+        background-color: silver;
+      }
+      #costumers tr:hover {
+        background-color: darkgrey;
+      }
+
+      #costumers th {
+        background-color: green;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_big">
+      <h1>Horizontális navigációs menü</h1>
+      <button class="green_button"><a href="child.html">Link1</a></button>
+      <button class="green_button"><a href="child.html">Rólunk</a></button>
+      <button class="green_button">
+        <a href="child.html">Szolgáltatások</a>
+      </button>
+      <button class="green_button"><a href="child.html">Kapcsolat</a></button>
+    </div>
+    <table id="costumers">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>County</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Sweden</td>
+      </tr>
+    </table>
+  </body>
+</html>
