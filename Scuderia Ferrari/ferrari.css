@@ -1,0 +1,33 @@
+.main_container {
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+}
+.navbar_left {
+  display: flex;
+  align-items: start;
+  width: 20%;
+}
+.central_navbar {
+  width: 80%;
+}
+.main_content{
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+}
+
+ul {
+  list-style: outside;
+  list-style-type: none;
+}
+li a:link {
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: underline;
+}
+
+.main_container h2 {
+  font-size: 20px;
+}
