@@ -2,9 +2,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: smaller;
 }
-.main_container {
+.main {
   display: flex;
   flex-direction: row;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .navbar_left {
   display: flex;
@@ -16,11 +21,12 @@ body {
   top: 0;
 }
 .central_navbar {
-  width: 80%;
+  width: 95%;
 }
 .main_content {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 body p {
   text-align: justify;
@@ -44,7 +50,7 @@ li a:hover {
 
 .side_table {
   width: 300px;
-  border: 1px solid black;;
+  border: 1px solid black;
 }
 table thead {
   background-color: grey;
@@ -76,4 +82,7 @@ table thead {
   border: 1px solid black;
   height: 40px;
 }
-
+.header {
+  display: flex;
+  justify-content: space-around;
+}
