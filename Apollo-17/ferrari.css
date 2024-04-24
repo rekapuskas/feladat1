@@ -5,12 +5,9 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-}
-.main_container {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
+
 .navbar_left {
   display: flex;
   align-items: start;
@@ -19,9 +16,12 @@ body {
   height: 250px;
   position: sticky;
   top: 0;
+  padding-right: 20px;
 }
 .central_navbar {
-  width: 95%;
+  width: 100%;
+  position: sticky;
+
 }
 .main_content {
   display: flex;
@@ -51,6 +51,9 @@ li a:hover {
 .side_table {
   width: 300px;
   border: 1px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  padding-bottom: 5px;
 }
 table thead {
   background-color: grey;
@@ -59,9 +62,10 @@ table thead {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid grey;
-  margin: 20px;
   border-bottom: 1px grey solid;
+  margin-bottom: 5px;
   padding: 5px;
+  
 }
 .navismall div {
   padding: 5px;
@@ -85,4 +89,16 @@ table thead {
 .header {
   display: flex;
   justify-content: space-around;
+  position: sticky;
+}
+.side_table2 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+ul {
+  list-style: circle;
+}
+.szöveg {
+  width: fit-content;
 }
