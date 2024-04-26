@@ -1,0 +1,20 @@
+.flag {
+    
+    border: 3px black solid;
+    width: fit-content;
+    
+  }
+  .line {
+    height: 400px;
+    width: 100px;
+    float: right;
+  }
+  .green {
+    background-color: green;
+  }
+  .white {
+    background-color: white;
+  }
+  .red {
+    background-color: red;
+  }

@@ -1,0 +1,28 @@
+
+table, th, td {
+    border: 1px lightgray solid;
+    border-collapse: collapse;
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+table th {
+    background-color: green;
+    color: whitesmoke;
+    width: 100px;
+}
+th:nth-child(3),
+td:nth-child(3) {
+    width: 100px;
+}
+th:nth-child(1),
+td:nth-child(1) {
+    width: 300px;
+}
+th:nth-child(2),
+td:nth-child(2) {
+    width: 200px;
+}
+tr:hover {
+    background-color: grey;
+}
