@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
 }
 
 .navbar_left {
@@ -21,14 +20,11 @@ body {
 }
 .central_navbar {
   width: 100%;
- 
 }
 .main_content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
-  
 }
 body p {
   text-align: justify;
@@ -51,15 +47,15 @@ li a:hover {
 }
 
 .side_table {
-  
   border: 1px solid black;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  
+  height: fit-content;
   padding-bottom: 5px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  
+  margin-top: 120px;
+  display: inline-block;
   
   
 }
@@ -68,7 +64,6 @@ table thead {
 }
 table th {
   height: 50px;
-  
 }
 .navismall {
   display: flex;
@@ -108,10 +103,8 @@ ul {
   list-style: circle;
 }
 .szöveg {
-  
-  float: left;
-  flex-wrap: wrap;
  
+  
 }
 .navbar_left li a:visited {
   color: black;
