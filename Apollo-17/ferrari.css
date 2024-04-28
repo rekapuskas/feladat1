@@ -55,8 +55,9 @@ li a:hover {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 120px;
-  display: inline-block;
-  
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 20;
   
 }
 table thead {
@@ -103,7 +104,8 @@ ul {
   list-style: circle;
 }
 .szöveg {
- 
+ display: flex;
+ flex-grow: 5;
   
 }
 .navbar_left li a:visited {
