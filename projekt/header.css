@@ -6,14 +6,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: palevioletred;
+  
 }
 .header_down {
-  background-color: palegreen;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: palegoldenrod;
 }
 .header_down img {
   height: 75px;
+  padding: 20px;
 }
+.header_down nav {
+  padding: 20px;
+}
+.header_down nav a {
+  padding: 5px;
+  text-decoration: none;
+}
+
 .contact {
   padding: 15px;
 }
