@@ -1,0 +1,28 @@
+:root {
+  --background-color: rgba(152, 251, 152, 0.548) ;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 50px 50px 50px;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: strech;
+  height: 50vh;
+}
+.container div {
+  background-color: var(--background-color);
+  border: 2px palegreen solid;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div:nth-child(4){
+    grid-column: span 3;
+}
+.container div:last-child{
+    grid-column: 2/4;
+}

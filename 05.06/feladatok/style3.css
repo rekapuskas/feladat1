@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+    "a a a b"
+    "a a a b"
+    "a a a ."
+    "c d d .";
+    grid-gap: 10px;
+}
+.container div {
+    background-color: paleturquoise;
+}
+.B {
+    grid-area: a;
+}
+.C {
+    grid-area: b;
+}
+.A {
+    grid-area: c;
+}
+.D {
+    grid-area: d;
+}
+

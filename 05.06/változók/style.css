@@ -1,0 +1,6 @@
+:root {
+    --dark-background: #680606;
+}
+.item {
+    background-color: var(--dark-background);
+}

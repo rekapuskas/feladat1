@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 25vh);
+    grid-template-areas: 
+    "header header header"
+    "first second third"
+    "footer footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: palevioletred;
+    text-align: center;
+}
+.list {
+    grid-area: first;
+    border-right: 1px grey solid;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+}
+.text1 {
+    grid-area: second;
+    border-left: 1px grey solid;
+    
+}
+.text2 {
+    grid-area: third;
+    border-left: 1px grey solid;
+    margin-left: 10px;
+}
+.footer {
+    grid-area: footer;
+    background-color: palegreen;
+    text-align: center;
+}

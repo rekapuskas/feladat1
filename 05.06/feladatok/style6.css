@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    grid-template-columns: 100vh 25vh;
+    grid-template-rows: repeat(4, 25vh);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "main main box1"
+    "main main box2"
+    "main main box3"
+    "main main box4";
+}
+.main{
+    grid-area: main;
+    background-color: palegoldenrod;
+    background-repeat: no-repeat;
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+}
+.box1{
+    background-color: palegreen;
+}
+.box2{
+    background-color: paleturquoise;
+}
+.box3{
+    background-color: palevioletred;
+}
+.box4{
+    background-color: paleturquoise;
+}

@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px 10px 25px;
+    background-color: darkblue;
+    color: white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header button {
+    border: 1px white solid;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 35px 10px 35px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+main h1 {
+    font-size: 200px;
+    color: darkblue;
+}
+main p {
+    color: darkblue;
+    text-align: center;
+}
+main button {
+    border: 1px darkblue solid;
+    background-color: white;
+    color: darkblue;
+    padding: 10px 35px 10px 35px;
+}
+.underline {
+    width: 30%;
+    border: 1px solid darkblue;
+}
+footer {
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    justify-content: flex-start;
+    font-size: 30px;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.nav-links li {
+    padding: 0px 10px 10px 10px;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10vh 1fr 10vh;
+}
