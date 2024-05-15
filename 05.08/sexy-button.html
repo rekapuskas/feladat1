@@ -9,10 +9,21 @@
             position: fixed;
             top: 50%;
             left: 50%;
+            transition-duration: 3.5s;
+            background-color: blueviolet;
+            color: blueviolet;
+            filter: grayscale(100%);
+            
+            
         }
         button:hover {
-            transform: scale(200%);
-            transition-duration: 1s;
+            transform: scale(2) rotate3d(1, 1, 1, 360deg);
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.5, 2, 5, 3);
+            color: white;
+            transition-delay: 1s;
+            box-shadow: 10px 10px rgba(46, 46, 46, 0.555);
+            filter: invert(0%);
         }
     </style>
 </head>
