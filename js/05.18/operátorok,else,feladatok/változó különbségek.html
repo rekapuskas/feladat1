@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-     let okay = confirm("Kérsz kávét?")  
-     if(okay){
-        let sugar = confirm("Kész hozzá cukrot?");
-        let tej = confirm("Kérsz bele tejet?");
-        if(cukor){
-            cukor
-        }
-     }
-     
+      let coffee = confirm("Kérsz kávét?")
+      let sugar;
+      let lactose;
+      let milk;
+      if(!coffee){
+          alert("Akkor menj el!");
+      }
+      if(coffee){
+          milk = confirm("Kérsz tejet bele?");
+          if(milk){
+              milk = "tejjel";
+          }
+          else {
+              milk = "tej nélkül";
+          }
+          if(milk){
+              lactose = confirm("Laktózmenteset?");
+              if(lactose){
+              lactose = "laktózmentes";
+          }
+          else {
+              lactose = "laktózos";
+          }
+
+          }
+          let sugar = confirm("Kérsz bele cukrot?");
+          if(sugar){
+              sugar = "cukorral";
+          }
+          else {
+              sugar = "cukor nélkül";
+          }
+      }
+      alert("A kávéját ", lactose, milk, sugar, "kérte");
     </script>
-</body>
+  </body>
 </html>
