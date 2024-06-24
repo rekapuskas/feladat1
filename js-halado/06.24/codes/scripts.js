@@ -1,13 +1,29 @@
-function welcomeMessage(name){
-    alert(`welcome ${name}`);
-}
+const numbers = [10, 8.7, 11, 104, 7.7, 10, 43.1, 88.8];
+//1. feladat
+const doubleNumbers = numbers.map((item) => {
+  return item * 2;
+});
 
-const welcomeMessage2 = function(name){
-    alert(`welcome ${name}`);
-}
-welcomeMessage("Ödön");
-welcomeMessage2("Ödönke");
+console.log(doubleNumbers);
 
-let welcomeMessage3 = welcomeMessage2;
+//2. feladat
+const wholeNumber = numbers.filter((number) => {
+  return number % 1 == 0;
+});
+console.log(wholeNumber);
 
-welcomeMessage3("Ödönke3");
+//3. feladat
+const find53 = numbers.find((number) => {
+  return number % 52 == 0;
+});
+console.log(find53);
+
+//4. feladat
+const sum = numbers.reduce((sum, number) => {
+    return sum + number;
+});
+console.log(sum);
+
+//5. feladat
+
+
