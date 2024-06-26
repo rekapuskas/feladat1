@@ -1,4 +1,5 @@
 const numbers = [10, 8.7, 11, 104, 7.7, 10, 43.1, 88.8];
+console.log(numbers);
 //1. feladat
 const doubleNumbers = numbers.map((item) => {
   return item * 2;
@@ -20,10 +21,15 @@ console.log(find53);
 
 //4. feladat
 const sum = numbers.reduce((sum, number) => {
-    return sum + number;
+  return sum + number;
 });
 console.log(sum);
 
 //5. feladat
 
-
+const largestNumber = numbers.reduce((max, number) => {
+  if (number > max) {
+    return max;
+  }
+});
+console.log(largestNumber);
