@@ -29,7 +29,18 @@ console.log(sum);
 
 const largestNumber = numbers.reduce((max, number) => {
   if (number > max) {
-    return max;
+    return number;
   }
+  return max;
 });
 console.log(largestNumber);
+
+//6. feladat
+
+const smallesNumber = numbers.reduce((min, number) => {
+  if (number < min) {
+    return number;
+  }
+  return min;
+});
+console.log(smallesNumber);
