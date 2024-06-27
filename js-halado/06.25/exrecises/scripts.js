@@ -7,49 +7,37 @@ const students = [
   { name: "Jane", age: 17, grade: 4 },
   { name: "Jill", age: 19, grade: 5 },
 ];
+console.log(students);
 
 //1. feladat
-const eminent = students.filter((num) => num.grade == 5);
+/*Válogasd le egy tömbbe azon diákokat, akik 5-ös osztályzatot kaptak! */
+const gotFive = students.filter((student) => student.grade >= 5);
+console.log(gotFive);
 
-console.log(eminent);
+//2.feladat
+/*Hozz létre egy olyan tömböt, ahol ugyan ezen adatok szerepelnek, de hozzákerül az egyes objektumokhoz még egy isValedictorian mező is, amely egy boolean értéket tartalmaz arról, 
+hogy az adott tanuló kitűnő-e vagy sem! (az 5-ös osztályzattal értékelt tanulók számítanak kitűnőnek)*/
+const extendedStudents = students.map((student) => ({
+  ...student,
+  isValedictorian: student.grade === 5,
+}));
+console.log(extendedStudents);
+//3.feladat
+/*A következő feladatot kettő vagy több tömbfüggvény összeláncolásával fogod tudni megoldani: Számold ki a felnőtt (18 éves vagy a feletti) tanulók osztályzatainak átlagát!*/
+const sumOfGradesAbove18 = students
+  .filter((student) => student.age >= 18)
+  .reduce((avg, student) => avg + student.grade, 0);
+  console.log(sumOfGradesAbove18);
 
-//2. feladat
-const valedoctorian = students.map((num) => {
-  if (num.grade == 5) {
-    num.isvaledoctorian = true;
-  } else {
-    num.isvaledoctorian = false;
-  }
-  return num;
-});
-console.log(valedoctorian);
-
-//3. feladat
-let above18 = students
-  .filter((num) => num.age >= 18)
-  .reduce((avg, num) => {
-    avg = avg + num.grade;
-    return avg;
-  }, 0);
-
-console.log(above18 / 3);
-
-//4. feladat
-const removeDuplicate = students.map(() => {
-
-})
+//4.feladat
+/*Az adatgyűjtés során történt egy kis hiba: a Jane nevű tanuló kétszer került bele az adatbázisba. Készíts egy olyan tömböt, amiben nem szerepel egyetlen diák sem 1-nél többször!*/
 
 //5.feladat
-const under18 = students.filter((student) => student.age < 18).some((student) => student.grade < 4);
-console.log(under18);
+/*Válaszolj az alábbi kérdésre egy boolean segítségével: Van 4-esnél rosszabb jegye a 18 év alatti tanulóknak? (true - van, false - nincs)*/
+const hasStudentsUnder18HasWeakerGradeThan4 = students.filter((student) => student.age < 18).some((student) => student.grade < 4);
+console.log(hasStudentsUnder18HasWeakerGradeThan4);
 
 //6.feladat
-
-//
-const arr = [1,2,3,4,5];
-const arr2  = [...arr];
-console.log(arr2);
-
-
-
-
+/*Készíts egy tömböt, amiben csak a diákok nevei szerepelnek! Használd azt a tömbödet amiből már kivetted az ismétlődő diákokat! */
+const onlyNames = students.map((student) => student.name);
+console.log(onlyNames);
