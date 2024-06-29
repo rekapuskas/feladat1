@@ -27,17 +27,24 @@ console.log(extendedStudents);
 const sumOfGradesAbove18 = students
   .filter((student) => student.age >= 18)
   .reduce((avg, student) => avg + student.grade, 0);
-  console.log(sumOfGradesAbove18);
+console.log(sumOfGradesAbove18);
 
 //4.feladat
 /*Az adatgyűjtés során történt egy kis hiba: a Jane nevű tanuló kétszer került bele az adatbázisba. Készíts egy olyan tömböt, amiben nem szerepel egyetlen diák sem 1-nél többször!*/
+const studentNames = students.map((student) => student.name);
+console.log(studentNames);
+const uniqueStudent = students.filter(
+  (student, index) => studentNames.indexOf(student.name) == index
+);
 
 //5.feladat
 /*Válaszolj az alábbi kérdésre egy boolean segítségével: Van 4-esnél rosszabb jegye a 18 év alatti tanulóknak? (true - van, false - nincs)*/
-const hasStudentsUnder18HasWeakerGradeThan4 = students.filter((student) => student.age < 18).some((student) => student.grade < 4);
+const hasStudentsUnder18HasWeakerGradeThan4 = students
+  .filter((student) => student.age < 18)
+  .some((student) => student.grade < 4);
 console.log(hasStudentsUnder18HasWeakerGradeThan4);
 
 //6.feladat
 /*Készíts egy tömböt, amiben csak a diákok nevei szerepelnek! Használd azt a tömbödet amiből már kivetted az ismétlődő diákokat! */
-const onlyNames = students.map((student) => student.name);
+const onlyNames = uniqueStudents.map((student) => student.name);
 console.log(onlyNames);
