@@ -353,6 +353,7 @@ function drawCategories(categories) {
         button.classList.remove("active");
         lastRedButton = null;
       } else {
+        // Beállítjuk a kattintott gomb háttérszínét pirosra
         button.classList.add("active");
         lastRedButton = button;
       }
@@ -417,6 +418,7 @@ async function renderFromAPI() {
 
   if (!response.ok) {
     throw new Error("Hopp-hopp");
+
   }
 
   const products = await response.json();
