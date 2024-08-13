@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Gomb</button>
+    <div id="div">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        molestias at facere incidunt. Corporis odio consequatur in, iste
+        perspiciatis autem, magnam nemo voluptas voluptates fuga fugiat
+        aspernatur nostrum deserunt! Iure?
+      </p>
+    </div>
+    <script>
+      const btn = document.getElementById("button");
+      btn.onclick = function(){
+        const div = document.getElementById("div");
+        div.hidden = true;
+      }
+    </script>
+  </body>
+</html>

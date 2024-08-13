@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elem">
+        <div id="elem-content">Element</div>
+    </div>
+    <ul>
+        <li>Listaelem</li>
+        <li>Listaelem</li>
+        <li>Listaelem</li>
+        <li>Listaelem</li>
+    </ul>
+    <script>
+        let elem = document.getElementById("elem");
+        elem.style.background = "red";
+        let listElements = document.querySelector('ul');
+        listElements.style.background = 'yellow';
+        firsListElement = listElements.querySelectorAll('li');
+        for(let i = 0; i < firsListElement.length; ++i){
+            firsListElement[i].style.background = 'red';
+        }
+    </script>
+</body>
+</html>

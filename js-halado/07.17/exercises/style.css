@@ -1,0 +1,30 @@
+#main-container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.shelf{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.product{
+    background-color: palegreen;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}
+#button-container{
+    margin: auto;
+    width: fit-content;
+}
+.out-of-stock{
+    background-color: palevioletred;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}

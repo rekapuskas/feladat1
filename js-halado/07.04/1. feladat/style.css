@@ -1,0 +1,9 @@
+#div {
+  width: fit-content;
+  margin: auto;
+}
+#number{
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+}

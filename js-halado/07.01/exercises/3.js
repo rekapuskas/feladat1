@@ -1,0 +1,1 @@
+document.body.querySelector('p').innerHTML = "Frissített tartalom";

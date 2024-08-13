@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feladat 2</title>
+  </head>
+  <body>
+    <button id="hiddenButton">Nyomd meg és eltűnik</button>
+    <script>
+      const btn = document.getElementById("hiddenbutton");
+      btn.onclick = function () {
+        const hiddenButton = document.getElementById("hiddenbutton");
+        hiddenButton.hidden = true;
+      };
+    </script>
+  </body>
+</html>
