@@ -353,7 +353,6 @@ function drawCategories(categories) {
         button.classList.remove("active");
         lastRedButton = null;
       } else {
-        // Beállítjuk a kattintott gomb háttérszínét pirosra
         button.classList.add("active");
         lastRedButton = button;
       }
